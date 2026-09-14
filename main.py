@@ -48,7 +48,7 @@ while True:
                     print("Invalid command.")
         elif soldier == 2:
             user_input = input(message).strip().lower()
-            for command, action2 in zip(commands, actions):
+            for command, action2 in zip(commands, actions2):
                 if user_input == command:
                     action2()
                     break
