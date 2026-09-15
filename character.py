@@ -39,7 +39,7 @@ class Character:
             if self.ammo != 0:
                 if self.weapon == "M249 SAW":
                     self.ammo = 200
-                    print(f"{self.rank} {self.name} reloaded to 201")
+                    print(f"{self.rank} {self.name} reloaded to 200")
                 else:
                     self.ammo = 31
                     print(f"{self.rank} {self.name} reloaded to 31")
