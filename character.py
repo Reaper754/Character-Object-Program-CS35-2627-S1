@@ -38,7 +38,7 @@ class Character:
         else:
             if self.ammo != 0:
                 if self.weapon == "M249 SAW":
-                    self.ammo = 201
+                    self.ammo = 200
                     print(f"{self.rank} {self.name} reloaded to 201")
                 else:
                     self.ammo = 31
@@ -58,18 +58,18 @@ class Character:
             else:
                 self.health += 50
                 print(f"{self.rank} {self.name} has healed 50 health points.")
-                self.stats()
                 if self.health > 150:
                     self.health = 150
+                self.stats()
         else:
             if self.health == 100:
                 print(f"{self.rank} {self.name} are already at max health.")
             else:
                 self.health += 50
                 print(f"{self.rank} {self.name} has healed 50 health points.")
-                self.stats()
                 if self.health > 100:
                     self.health = 100
+                self.stats()
 
     def stats(self):
         print(f"health: {self.health}, Weapon: {self.weapon}, Name: {self.name}, Ammo: {self.ammo}, Rank: {self.rank}")
